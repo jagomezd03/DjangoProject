@@ -25,5 +25,14 @@
             </div>
             <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
+        <p>Searching for {{searchTerm}}</p>
+        {% for movie in movies}
+            <h2>{{movie.title}}</h2>
+            <h3>{{movie.description}}</h3>
+            <img src="{{movie.image.url}}">
+            {% if movie .url}
+                <a href="{{movie.url}}">Movie Link</a>
+            {%end if%}
+        {%end for%}
     </div>
 </body>
